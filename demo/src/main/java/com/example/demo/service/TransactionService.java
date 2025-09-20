@@ -19,4 +19,5 @@ public class TransactionService {
     public List<Transaction> getAllTransactions() {
         return txRepo.findAll();
     }
+
 }

@@ -79,3 +79,4 @@ public class Wallet {
         this.balance = balance == null ? BigDecimal.ZERO : balance;
     }
 }
+
