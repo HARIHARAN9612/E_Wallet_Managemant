@@ -25,6 +25,8 @@ public class Transaction {
 
     private LocalDateTime timestamp;
 
+     public Transaction() {}
+
     public Transaction(Integer fromWalletId, Integer toWalletId, BigDecimal amount, LocalDateTime timestamp) {
         this.amount = amount;
         this.fromWalletId = fromWalletId;

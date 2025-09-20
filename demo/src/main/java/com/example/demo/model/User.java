@@ -3,34 +3,39 @@ package com.example.demo.model;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 @Getter
 @Setter
+@NoArgsConstructor // This is required by Hibernate
 @Entity
+@Table(name = "users")
 public class User {
-    
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-     private Integer id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @Column(unique = true, nullable = false)
     private String email;
 
     private String username;
 
-    // store minimal for assignment. For real app, store hashed password, roles, etc.
-    private String role;   
+    private String role;
 
-    public User(String email, Integer id, String role, String username) {
+    // Optional: convenience constructor
+    public User(String email, String username, String role) {
         this.email = email;
-        this.id = id;
-        this.role = role;
         this.username = username;
+        this.role = role;
     }
 
     public String getEmail() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return email;
     }
-    
-    
-}
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+}
