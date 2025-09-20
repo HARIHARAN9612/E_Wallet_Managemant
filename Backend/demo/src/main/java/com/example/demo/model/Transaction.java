@@ -18,7 +18,6 @@ public class Transaction {
     private Long transactionId;
 
     private Integer fromWalletId;
-
     private Integer toWalletId;
 
     private BigDecimal amount;
