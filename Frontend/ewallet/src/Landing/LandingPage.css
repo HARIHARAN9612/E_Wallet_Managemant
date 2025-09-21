@@ -1,0 +1,113 @@
+/* Whole Page */
+.landing {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #6a11cb;
+  font-size: 48px;
+}
+
+.brand {
+  color: #6a11cb;
+  text-decoration: underline;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  max-width: 400px;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #4a0fa6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #6a11cb;
+}
+
+/* Hero Images */
+.hero-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-images img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.stats h2 {
+  font-size: 32px;
+  color: #6a11cb;
+}
+
+.stats p {
+  color: #555;
+}
+
+/* Partners Section */
+.partners {
+  margin: 40px auto;
+}
+
+.partners p {
+  font-size: 16px;
+  color: #666;
+}
+
+.logos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
