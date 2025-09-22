@@ -8,7 +8,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="logo">
         <div className="logo-icon"></div>
-        <h1>Finomac</h1>
+        <h1>WishPay</h1>
       </div>
 
       {/* Links */}

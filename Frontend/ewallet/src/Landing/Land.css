@@ -1,0 +1,69 @@
+.land {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  background: linear-gradient(135deg, #194198, #4477e4); /* gradient bg */
+  color: #fff;
+  height: 100vh; /* full screen */
+}
+
+/* Left Section */
+.left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.left h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-size: 2.5rem;
+}
+
+.brand {
+  color: #ffd700; /* golden highlight like PayFlex brand */
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.phonehome{
+  padding-left: 200px;
+    max-width: 900px;
+    padding-top: 50px;
+    height: auto;
+   /* mimic phone tilt */
+}
+.cta-btn {
+  background: #fff;
+  color: #5c6cf6;
+  padding: 20px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+/* Right Section */
+.right {
+  flex: 1;
+  display:inline;
+  
+}
+
