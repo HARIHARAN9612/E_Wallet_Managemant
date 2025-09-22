@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  
   background: linear-gradient(135deg, #194198, #4477e4); /* gradient bg */
   color: #fff;
   height: 100vh; /* full screen */
@@ -10,15 +10,17 @@
 
 /* Left Section */
 .left {
+  padding-left: 130px;
   flex: 1;
+  padding-top: 40px;
   max-width: 50%;
 }
 
 .left h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .highlight {
@@ -26,31 +28,34 @@
 }
 
 .brand {
-  color: #ffd700; /* golden highlight like PayFlex brand */
+  font-size: 70px;
+  color: #ffd700;
+  text-decoration: none;
+  padding-left: 40px; /* golden highlight like PayFlex brand */
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 30px;
   color: #e0e0e0;
 }
 
 .phonehome{
-  padding-left: 200px;
+  padding-left: 30px;
     max-width: 900px;
-    padding-top: 50px;
+    padding-top: 105px;
     height: auto;
    /* mimic phone tilt */
 }
 .cta-btn {
   background: #fff;
   color: #5c6cf6;
-  padding: 20px 28px;
+  padding: 15px 25px;
   border: none;
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 600;
-  margin-left: 22px;
+  margin-left: 55px;
   cursor: pointer;
   transition: 0.3s;
 }

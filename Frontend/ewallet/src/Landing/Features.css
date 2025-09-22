@@ -1,0 +1,168 @@
+/* Common Feature Section Styles */
+.features-section {
+  padding: 80px 100px;
+  background: #f9f9fb;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.features-header .tag {
+  display: inline-block;
+  background: #eeeafe;
+  color: #6b46f3;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.features-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 20px 0 10px;
+  color: #000;
+}
+
+.features-header p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* Grid Layouts */
+.features-grid {
+  display: grid;
+  gap: 30px;
+}
+
+/* First Grid: First two feature cards */
+.first-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Second Grid: Last two feature cards */
+.second-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Card Base */
+.feature-card {
+  border-radius: 16px;
+  padding: 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #111;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.img-reward {
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: -50px;
+}
+
+.img-paid {
+  max-width: 100%;
+  max-height: 350px; /* slightly smaller if needed */
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: -70px;
+  
+}
+
+.img-chart {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+   margin-top: -32px;
+}
+
+
+.img-payment {
+  max-width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: -60px;
+}
+
+/* Background variations */
+.feature-card.light {
+  background: #e5e5e5;
+}
+
+.feature-card.purple {
+  background: #e0b9f5; /* light purple */
+}
+
+.feature-card.dark {
+  background: #4b2aad; /* dark purple */
+  color: #fff;
+}
+
+.feature-card.dark h3,
+.feature-card.dark p {
+  color: #fff;
+}
+
+/* Special sizing for individua l cards */
+/* First grid */
+.first-grid .feature-card:nth-child(1) {
+  height: 320px; 
+  width: 380px; 
+  margin-left: 120px; 
+  margin-bottom: 40px; /* smaller card */
+}
+.first-grid .feature-card:nth-child(2) {
+  height: 320px; 
+  width: 550px; 
+  margin-left: -70px;
+  
+  margin-bottom: 40px; /* larger card */
+}
+
+/* Second grid */
+.second-grid .feature-card:nth-child(1) {
+  height: 320px; 
+  width: 550px;
+  margin-left: 120px; /* larger card */
+}
+.second-grid .feature-card:nth-child(2) {
+  height: 320px; 
+  margin-left: 10px;
+  width: 380px; /* smaller card */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .features-grid .feature-card {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}

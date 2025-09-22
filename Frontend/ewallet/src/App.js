@@ -1,7 +1,7 @@
 import React from "react";
-import LandingPage from "./Landing/LandingPage";
 import Navbar from "./Landing/Nav";
 import Land from "./Landing/Land";
+import Features from "./Landing/Features";
 
 
 
@@ -10,6 +10,7 @@ function App() {
     <div>
        <Navbar />
        <Land/>
+       <Features/>
      
     </div>
   );

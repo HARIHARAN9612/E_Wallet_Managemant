@@ -12,8 +12,8 @@ const Land = () => {
       
         <div className="left">
           <h1>
-            Enhance <span className="highlight"></span> your <br />
-            Financial with <span className="brand">Wishpay</span>
+            Enhance  your <span className="highlight"></span> <br />
+            Financial with <span className="brand">    Wishpay</span>
           </h1>
           <p className="subtitle">
             Moving money should never take more than a few taps. Transfers are
