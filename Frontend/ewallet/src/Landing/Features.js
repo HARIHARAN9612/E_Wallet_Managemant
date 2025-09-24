@@ -7,7 +7,7 @@ import payment from "../Assests/paidb.png";
 
 const Features = () => {
   return (
-    <div className="features-section">
+    <div className="features-section" id="features">
       {/* Top Heading */}
       <div className="features-header">
         <span className="tag">FEATURE</span>
