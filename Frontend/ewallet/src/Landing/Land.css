@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   
-  background: linear-gradient(135deg, #194198, #4477e4); /* gradient bg */
+  background-color: #2131ba; /* gradient bg */
   color: #fff;
   height: 100vh; /* full screen */
 }

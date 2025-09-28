@@ -1,14 +1,56 @@
 // src/components/Navbar.jsx
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Nav.css";
 
 const Navbar = () => {
-  const handleScrollToFeatures = () => {
-    const featuresSection = document.getElementById("features");
-    if (featuresSection) {
-      featuresSection.scrollIntoView({ behavior: "smooth" });
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Helper to scroll to section after navigation
+  const scrollToSection = (id) => {
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Wait for navigation
+  };
+
+  const handleHome = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      scrollToSection("Land");
+    } else {
+      scrollToSection("Land");
     }
   };
+
+  const handleFeatures = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      scrollToSection("features");
+    } else {
+      scrollToSection("features");
+    }
+  };
+  const handleOverview = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      scrollToSection("overview");
+    } else {
+      scrollToSection("overview");
+    }
+  };
+  const handleAbout = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      scrollToSection("about-section");
+    } else {
+      scrollToSection("about-section");
+    }
+  };
+
   return (
     <nav className="navbar">
       {/* Logo */}
@@ -19,14 +61,14 @@ const Navbar = () => {
 
       {/* Links */}
       <ul className="nav-links">
-        <li className="active">Home</li>
-        <li onClick={handleScrollToFeatures} style={{ cursor: "pointer" }}>Feature</li>
-        <li>Overview</li>
-        <li>About</li>
+        <li onClick={handleHome} style={{ cursor: "pointer" }}>Home</li>
+        <li onClick={handleFeatures} style={{ cursor: "pointer" }}>Feature</li>
+        <li onClick={handleOverview} style={{ cursor: "pointer" }}>Overview</li>
+        <li onClick={handleAbout} style={{ cursor: "pointer" }}>About</li>
       </ul>
 
       {/* Button */}
-      <button className="signin-btn">Sign In</button>
+      <button className="signin-btn" onClick={() => navigate("/login")}>Sign In</button>
     </nav>
   );
 };

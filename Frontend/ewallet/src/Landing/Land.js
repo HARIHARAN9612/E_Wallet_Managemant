@@ -21,10 +21,6 @@ const Land = () => {
           </p>
           <button className="cta-btn">Send Money Now</button>
         </div>
-
-        
-     
-
       {/* Stats Section */}
       <div className="right">
         <img className="phonehome" src={phonehome} alt="/" />
