@@ -26,7 +26,7 @@ const Navbar = () => {
     }
   };
 
-  const handleFeatures = () => {
+  const handleFeatures = () =>{
     if (location.pathname !== "/") {
       navigate("/");
       scrollToSection("features");
